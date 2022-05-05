@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\eclipse-java-2022-03 workspace\ui_t5\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">49 methods, 5 failed,   44 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;verify Admin login Page title&quot;, &quot;Admin Back End&quot;)">runScenario("verify Admin login Page title", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Extras&quot;, &quot;Supplier Back End&quot;)">runScenario("Extras", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Bookings&quot;, &quot;Supplier Back End&quot;)">runScenario("Bookings", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Delete Bookings With Booking Status Cancelled&quot;, &quot;Admin Back End&quot;)">runScenario("Delete Bookings With Booking Status Cancelled", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Booking status&quot;, &quot;Admin Back End&quot;)">runScenario("Booking status", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;front Login page title&quot;, &quot;Customer Front End&quot;)">runScenario("front Login page title", "Customer Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Manage Tours&quot;, &quot;Supplier Back End&quot;)">runScenario("Manage Tours", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;verify Admin invalid login without credential&quot;, &quot;Admin Back End&quot;)">runScenario("verify Admin invalid login without credential", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin valid login&quot;, &quot;Admin Back End&quot;)">runScenario("Admin valid login", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin invalid login&quot;, &quot;Admin Back End&quot;)">runScenario("Admin invalid login", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Supplier invalid login with invalid password&quot;, &quot;Supplier Back End&quot;)">runScenario("Supplier invalid login with invalid password", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Home Link&quot;, &quot;Agent Front End&quot;)">runScenario("Home Link", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add Funds&quot;, &quot;Customer Front End&quot;)">runScenario("Add Funds", "Customer Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Logout&quot;, &quot;Agent Front End&quot;)">runScenario("Logout", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;My Bookings&quot;, &quot;Customer Front End&quot;)">runScenario("My Bookings", "Customer Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Supplier invalid login with invalid credential&quot;, &quot;Supplier Back End&quot;)">runScenario("Supplier invalid login with invalid credential", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Revenue Breakdown&quot;, &quot;Supplier Back End&quot;)">runScenario("Revenue Breakdown", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;My Profile&quot;, &quot;Agent Front End&quot;)">runScenario("My Profile", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;My Profile&quot;, &quot;Customer Front End&quot;)">runScenario("My Profile", "Customer Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Hotel Link&quot;, &quot;Agent Front End&quot;)">runScenario("Hotel Link", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;valid login&quot;, &quot;Customer Front End&quot;)">runScenario("valid login", "Customer Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Website link&quot;, &quot;Admin Back End&quot;)">runScenario("Website link", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Supplier login Page title&quot;, &quot;Supplier Back End&quot;)">runScenario("Supplier login Page title", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;valid login&quot;, &quot;Agent Front End&quot;)">runScenario("valid login", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Hotel search by city&quot;, &quot;Agent Front End&quot;)">runScenario("Hotel search by city", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;front Login page title&quot;, &quot;Agent Front End&quot;)">runScenario("front Login page title", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Bookings link&quot;, &quot;Admin Back End&quot;)">runScenario("Bookings link", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;invalid login&quot;, &quot;Customer Front End&quot;)">runScenario("invalid login", "Customer Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;invalid login&quot;, &quot;Agent Front End&quot;)">runScenario("invalid login", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Blog Link&quot;, &quot;Agent Front End&quot;)">runScenario("Blog Link", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Supplier invalid login without data&quot;, &quot;Supplier Back End&quot;)">runScenario("Supplier invalid login without data", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin invalid login with invalid credential&quot;, &quot;Admin Back End&quot;)">runScenario("Admin invalid login with invalid credential", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Dropdown currency&quot;, &quot;Agent Front End&quot;)">runScenario("Dropdown currency", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Address field update in profile&quot;, &quot;Customer Front End&quot;)">runScenario("Address field update in profile", "Customer Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Logout&quot;, &quot;Customer Front End&quot;)">runScenario("Logout", "Customer Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;View Voucher&quot;, &quot;Customer Front End&quot;)">runScenario("View Voucher", "Customer Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Back to Home page&quot;, &quot;Agent Front End&quot;)">runScenario("Back to Home page", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Offers Link&quot;, &quot;Agent Front End&quot;)">runScenario("Offers Link", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Admin invalid login with invalid password&quot;, &quot;Admin Back End&quot;)">runScenario("Admin invalid login with invalid password", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;My Bookings&quot;, &quot;Agent Front End&quot;)">runScenario("My Bookings", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Flights Link&quot;, &quot;Agent Front End&quot;)">runScenario("Flights Link", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful Payment&quot;, &quot;Admin Back End&quot;)">runScenario("Successful Payment", "Admin Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Visa Link&quot;, &quot;Agent Front End&quot;)">runScenario("Visa Link", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Sales overview &amp; summary&quot;, &quot;Supplier Back End&quot;)">runScenario("Sales overview & summary", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Payment&quot;, &quot;Customer Front End&quot;)">runScenario("Payment", "Customer Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add Funds&quot;, &quot;Agent Front End&quot;)">runScenario("Add Funds", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Tours Link&quot;, &quot;Agent Front End&quot;)">runScenario("Tours Link", "Agent Front End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Supplier valid login&quot;, &quot;Supplier Back End&quot;)">runScenario("Supplier valid login", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.uitesting.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Supplier invalid login with password only&quot;, &quot;Supplier Back End&quot;)">runScenario("Supplier invalid login with password only", "Supplier Back End")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.uitesting.runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;verify Admin login Page title&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("verify Admin login Page title", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("verify Admin login Page title", "Admin Back End")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.phptravels.net/api/admin] but found [null]
+	at com.uitesting.stepdefintions.AdminTestSteps.check_admin_login_page_url_should_be(AdminTestSteps.java:36)
+	at ✽.check admin login page url should be &apos;https://www.phptravels.net/api/admin&apos;(file:///D:/eclipse-java-2022-03%20workspace/ui_t5/src/test/resources/features/Admin.feature:8)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Extras&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Extras", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Extras", "Supplier Back End")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-P2B97J9&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61528}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fffca30bc7851591ddb38787059a88b0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.uitesting.pages.SupplierDashboardPage.clickOnElement(SupplierDashboardPage.java:63)
+	at com.uitesting.stepdefintions.SupplierTestSteps.supplier_click_on_Extras(SupplierTestSteps.java:139)
+	at ✽.supplier click on Extras &apos;Extras&apos;(file:///D:/eclipse-java-2022-03%20workspace/ui_t5/src/test/resources/features/Supplier.feature:106)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Bookings&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Bookings", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Bookings", "Supplier Back End")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://www.phptravels.net/api/supplier/bookings] but found [Error]
+	at com.uitesting.stepdefintions.SupplierTestSteps.supplier_should_redirect_to_the_Bookings_page_with_url(SupplierTestSteps.java:155)
+	at ✽.supplier should redirect to the Bookings page with url &apos;https://www.phptravels.net/api/supplier/bookings&apos;(file:///D:/eclipse-java-2022-03%20workspace/ui_t5/src/test/resources/features/Supplier.feature:119)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Delete Bookings With Booking Status Cancelled&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("Delete Bookings With Booking Status Cancelled", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Delete Bookings With Booking Status Cancelled", "Admin Back End")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=100.0.4896.127)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-P2B97J9&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d2710aa5c7a883bcd91b13101dfeacd
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
+	at com.uitesting.pages.AdminBookingsPage.alert(AdminBookingsPage.java:96)
+	at com.uitesting.stepdefintions.AdminTestSteps.an_alert_is_open(AdminTestSteps.java:165)
+	at ✽.an alert is open(file:///D:/eclipse-java-2022-03%20workspace/ui_t5/src/test/resources/features/Admin.feature:139)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Booking status&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("Booking status", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Booking status", "Admin Back End")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h1[contains(text(),&apos;Dashboard&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.uitesting.util.PageUtil.explicitlyWait(PageUtil.java:79)
+	at com.uitesting.pages.AdminBookingsPage.clickOnDahboard(AdminBookingsPage.java:104)
+	at com.uitesting.stepdefintions.AdminTestSteps.the_count_on_booking_status_pending_is_less_by_one_compare_with_previous_count(AdminTestSteps.java:147)
+	at ✽.the count on booking status pending is less by one compare with previous count(file:///D:/eclipse-java-2022-03%20workspace/ui_t5/src/test/resources/features/Admin.feature:107)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Dashboard&apos;)]&quot;}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-P2B97J9&apos;, ip: &apos;192.168.1.14&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59736}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b17b23ec5ea87b21ca0633802cf144e
+*** Element info: {Using=xpath, value=//h1[contains(text(),&apos;Dashboard&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.uitesting.util.PageUtil.explicitlyWait(PageUtil.java:79)
+	at com.uitesting.pages.AdminBookingsPage.clickOnDahboard(AdminBookingsPage.java:104)
+	at com.uitesting.stepdefintions.AdminTestSteps.the_count_on_booking_status_pending_is_less_by_one_compare_with_previous_count(AdminTestSteps.java:147)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:124)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.uitesting.runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;front Login page title&quot;, &quot;Customer Front End&quot;)">
+                  </a> <!-- runScenario("front Login page title", "Customer Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("front Login page title", "Customer Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Manage Tours&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Manage Tours", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Manage Tours", "Supplier Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;verify Admin invalid login without credential&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("verify Admin invalid login without credential", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("verify Admin invalid login without credential", "Admin Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Admin valid login&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("Admin valid login", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Admin valid login", "Admin Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Admin invalid login&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("Admin invalid login", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Admin invalid login", "Admin Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Supplier invalid login with invalid password&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Supplier invalid login with invalid password", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Supplier invalid login with invalid password", "Supplier Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Home Link&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Home Link", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Home Link", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add Funds&quot;, &quot;Customer Front End&quot;)">
+                  </a> <!-- runScenario("Add Funds", "Customer Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add Funds", "Customer Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Logout&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Logout", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Logout", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;My Bookings&quot;, &quot;Customer Front End&quot;)">
+                  </a> <!-- runScenario("My Bookings", "Customer Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("My Bookings", "Customer Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Supplier invalid login with invalid credential&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Supplier invalid login with invalid credential", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Supplier invalid login with invalid credential", "Supplier Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Revenue Breakdown&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Revenue Breakdown", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Revenue Breakdown", "Supplier Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;My Profile&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("My Profile", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("My Profile", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;My Profile&quot;, &quot;Customer Front End&quot;)">
+                  </a> <!-- runScenario("My Profile", "Customer Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("My Profile", "Customer Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Hotel Link&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Hotel Link", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Hotel Link", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;valid login&quot;, &quot;Customer Front End&quot;)">
+                  </a> <!-- runScenario("valid login", "Customer Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("valid login", "Customer Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Website link&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("Website link", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Website link", "Admin Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Supplier login Page title&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Supplier login Page title", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Supplier login Page title", "Supplier Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;valid login&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("valid login", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("valid login", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Hotel search by city&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Hotel search by city", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Hotel search by city", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;front Login page title&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("front Login page title", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("front Login page title", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Bookings link&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("Bookings link", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Bookings link", "Admin Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;invalid login&quot;, &quot;Customer Front End&quot;)">
+                  </a> <!-- runScenario("invalid login", "Customer Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("invalid login", "Customer Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;invalid login&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("invalid login", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("invalid login", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Blog Link&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Blog Link", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Blog Link", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Supplier invalid login without data&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Supplier invalid login without data", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Supplier invalid login without data", "Supplier Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Admin invalid login with invalid credential&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("Admin invalid login with invalid credential", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Admin invalid login with invalid credential", "Admin Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Dropdown currency&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Dropdown currency", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Dropdown currency", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Address field update in profile&quot;, &quot;Customer Front End&quot;)">
+                  </a> <!-- runScenario("Address field update in profile", "Customer Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Address field update in profile", "Customer Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Logout&quot;, &quot;Customer Front End&quot;)">
+                  </a> <!-- runScenario("Logout", "Customer Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Logout", "Customer Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;View Voucher&quot;, &quot;Customer Front End&quot;)">
+                  </a> <!-- runScenario("View Voucher", "Customer Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("View Voucher", "Customer Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Back to Home page&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Back to Home page", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Back to Home page", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Offers Link&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Offers Link", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Offers Link", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Admin invalid login with invalid password&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("Admin invalid login with invalid password", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Admin invalid login with invalid password", "Admin Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;My Bookings&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("My Bookings", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("My Bookings", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Flights Link&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Flights Link", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Flights Link", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful Payment&quot;, &quot;Admin Back End&quot;)">
+                  </a> <!-- runScenario("Successful Payment", "Admin Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful Payment", "Admin Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Visa Link&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Visa Link", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Visa Link", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sales overview &amp; summary&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Sales overview & summary", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sales overview & summary", "Supplier Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Payment&quot;, &quot;Customer Front End&quot;)">
+                  </a> <!-- runScenario("Payment", "Customer Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Payment", "Customer Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Add Funds&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Add Funds", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Add Funds", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Tours Link&quot;, &quot;Agent Front End&quot;)">
+                  </a> <!-- runScenario("Tours Link", "Agent Front End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Tours Link", "Agent Front End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Supplier valid login&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Supplier valid login", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Supplier valid login", "Supplier Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Supplier invalid login with password only&quot;, &quot;Supplier Back End&quot;)">
+                  </a> <!-- runScenario("Supplier invalid login with password only", "Supplier Back End") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Supplier invalid login with password only", "Supplier Back End")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\eclipse-java-2022-03 workspace\ui_t5\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.uitesting.runner.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(49);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(0, 3, 136548);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(1, 3, 108764);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(2, 3, 67205);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(3, 3, 35892);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(4, 3, 33258);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(5, 3, 32523);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(6, 3, 31740);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(7, 3, 31084);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(8, 3, 29314);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(9, 3, 29143);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(10, 3, 28032);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(11, 3, 27463);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(12, 3, 26588);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(13, 3, 26541);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(14, 3, 26388);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(15, 3, 25861);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(16, 3, 24400);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(17, 3, 24125);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(18, 3, 23111);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(19, 3, 22903);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(20, 3, 21955);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(21, 3, 21421);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(22, 3, 21236);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(23, 3, 20198);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(24, 3, 20153);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(25, 3, 20120);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(26, 3, 20119);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(27, 3, 19878);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(28, 3, 18436);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(29, 3, 18077);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(30, 3, 17978);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(31, 3, 17924);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(32, 3, 17871);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'runScenario')
+data.setCell(33, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(33, 3, 17454);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'runScenario')
+data.setCell(34, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(34, 3, 17409);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'runScenario')
+data.setCell(35, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(35, 3, 16827);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'runScenario')
+data.setCell(36, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(36, 3, 16426);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'runScenario')
+data.setCell(37, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(37, 3, 16399);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'runScenario')
+data.setCell(38, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(38, 3, 16079);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'runScenario')
+data.setCell(39, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(39, 3, 16033);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'runScenario')
+data.setCell(40, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(40, 3, 15821);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'runScenario')
+data.setCell(41, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(41, 3, 15651);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'runScenario')
+data.setCell(42, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(42, 3, 15556);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'runScenario')
+data.setCell(43, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(43, 3, 15109);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'runScenario')
+data.setCell(44, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(44, 3, 15105);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'runScenario')
+data.setCell(45, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(45, 3, 15063);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'runScenario')
+data.setCell(46, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(46, 3, 14310);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'runScenario')
+data.setCell(47, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(47, 3, 14150);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'runScenario')
+data.setCell(48, 2, 'com.uitesting.runner.TestRunner')
+data.setCell(48, 3, 13222);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 21 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.uitesting.runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("verify Admin login Page title", "Admin Back End")</span>
+                <span class="method-start">591 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("verify Admin invalid login without credential", "Admin Back End")</span>
+                <span class="method-start">137145 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Admin invalid login", "Admin Back End")</span>
+                <span class="method-start">169670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Admin invalid login with invalid credential", "Admin Back End")</span>
+                <span class="method-start">190907 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Admin invalid login with invalid password", "Admin Back End")</span>
+                <span class="method-start">208985 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Admin valid login", "Admin Back End")</span>
+                <span class="method-start">226858 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Website link", "Admin Back End")</span>
+                <span class="method-start">249971 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Bookings link", "Admin Back End")</span>
+                <span class="method-start">283231 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Booking status", "Admin Back End")</span>
+                <span class="method-start">314976 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful Payment", "Admin Back End")</span>
+                <span class="method-start">423744 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Delete Bookings With Booking Status Cancelled", "Admin Back End")</span>
+                <span class="method-start">452889 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("front Login page title", "Agent Front End")</span>
+                <span class="method-start">482207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("invalid login", "Agent Front End")</span>
+                <span class="method-start">499035 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("valid login", "Agent Front End")</span>
+                <span class="method-start">514858 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("My Bookings", "Agent Front End")</span>
+                <span class="method-start">533298 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add Funds", "Agent Front End")</span>
+                <span class="method-start">555254 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("My Profile", "Agent Front End")</span>
+                <span class="method-start">579655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Logout", "Agent Front End")</span>
+                <span class="method-start">607689 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Home Link", "Agent Front End")</span>
+                <span class="method-start">631815 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Hotel Link", "Agent Front End")</span>
+                <span class="method-start">662901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Flights Link", "Agent Front End")</span>
+                <span class="method-start">689290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Tours Link", "Agent Front End")</span>
+                <span class="method-start">716755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Visa Link", "Agent Front End")</span>
+                <span class="method-start">736634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Blog Link", "Agent Front End")</span>
+                <span class="method-start">754615 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Offers Link", "Agent Front End")</span>
+                <span class="method-start">772025 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Dropdown currency", "Agent Front End")</span>
+                <span class="method-start">788452 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Back to Home page", "Agent Front End")</span>
+                <span class="method-start">811356 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Hotel search by city", "Agent Front End")</span>
+                <span class="method-start">831510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("front Login page title", "Customer Front End")</span>
+                <span class="method-start">858052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("invalid login", "Customer Front End")</span>
+                <span class="method-start">871276 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("valid login", "Customer Front End")</span>
+                <span class="method-start">885427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("My Bookings", "Customer Front End")</span>
+                <span class="method-start">901079 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Add Funds", "Customer Front End")</span>
+                <span class="method-start">917479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("My Profile", "Customer Front End")</span>
+                <span class="method-start">937678 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Logout", "Customer Front End")</span>
+                <span class="method-start">973573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("View Voucher", "Customer Front End")</span>
+                <span class="method-start">993694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Payment", "Customer Front End")</span>
+                <span class="method-start">1019560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Address field update in profile", "Customer Front End")</span>
+                <span class="method-start">1046150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Supplier login Page title", "Supplier Back End")</span>
+                <span class="method-start">1067572 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Supplier invalid login without data", "Supplier Back End")</span>
+                <span class="method-start">1083607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Supplier invalid login with password only", "Supplier Back End")</span>
+                <span class="method-start">1098671 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Supplier invalid login with invalid credential", "Supplier Back End")</span>
+                <span class="method-start">1112982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Supplier invalid login with invalid password", "Supplier Back End")</span>
+                <span class="method-start">1128539 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Supplier valid login", "Supplier Back End")</span>
+                <span class="method-start">1144621 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Sales overview & summary", "Supplier Back End")</span>
+                <span class="method-start">1162076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Revenue Breakdown", "Supplier Back End")</span>
+                <span class="method-start">1177186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Manage Tours", "Supplier Back End")</span>
+                <span class="method-start">1192292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Extras", "Supplier Back End")</span>
+                <span class="method-start">1210217 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Bookings", "Supplier Back End")</span>
+                <span class="method-start">1277423 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">1297578 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
